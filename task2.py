@@ -5,7 +5,7 @@ def solve(budgets):
     
     three_sums = []
     for i in range(60):
-        for j in range(i+1, 60):
+        for j in range(i + 1, 60):
             for k in range(j+1, 60):
                 s = powers[i] + powers[j] + powers[k]
                 if s <= 10**18:
@@ -25,7 +25,7 @@ def solve(budgets):
 
 
 n = int(input())
-budgets = [int(input()) for i in range(n)]
+budgets = [int(input()) for _ in range(n)]
 
 answers = solve(budgets)
 print("\n".join(map(str, answers)))
